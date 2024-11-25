@@ -1,0 +1,87 @@
+.headerAtividade {
+    width: 100vw;
+    position: fixed;
+}
+
+.campo {
+    padding: 10px;
+    background-color: rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    box-shadow: inset 0px -5px 2px -1px rgb(0, 0, 0);
+}
+
+.img{
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 2vw;
+    margin-bottom: 1vh;
+}
+
+.botao {
+    background-color: transparent;
+    color: white;
+    transition: all 200s;
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+
+.campoOpcaoNav {
+    background-color: grey;
+    transition: all 0.2s;
+    padding: 1%;
+    
+}
+
+
+.opcoesNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo strong {
+    color: #ff9800;
+}
+
+.opcao>* {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.opcao>*:hover{
+    color: #ff9800;
+
+}
+
+.opcao {
+    list-style-type: none;
+}
+
+#pagina1:hover, #pagina2:hover, #pagina3:hover{
+    color: #ff9800;
+}
+
+.logoEclass{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    .opcoesNav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+    }
+}
