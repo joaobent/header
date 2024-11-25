@@ -11,7 +11,7 @@
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    box-shadow: inset 0px -5px 2px -1px rgb(0, 0, 0);
+    box-shadow: inset 0px -3px 2px -1px rgb(0, 0, 0);
 }
 
 .img{
@@ -38,7 +38,6 @@
     
 }
 
-
 .opcoesNav {
     display: flex;
     justify-content: space-around;
@@ -51,6 +50,16 @@
 
 .titulo strong {
     color: #ff9800;
+}
+
+.inicio{
+    margin: -1px 10px;
+}
+.sobre{
+    margin: -1px 10px;
+}
+.contato{
+    margin: -1px 10px;
 }
 
 .opcao>* {
@@ -80,8 +89,27 @@
 @media screen and (max-width: 400px) {
     .opcoesNav {
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 100px;
+        gap: 2vh;
+        height: 13vh;
+        width: 30vw;
+        margin-left: 1.5vw;
+    }
+    .campoOpcaoNav {
+        background-color: grey;
+        transition: all 0.2s;
+        padding: 1%;
+        width: 40vw;
+        margin-top: 1vh;
+        margin-left: 4vw;
+        border-radius: 8px;
+    }
+    .inicio{
+        margin-right: 2.5vw;
+    }
+    .sobre{
+        margin-right: 2.5vw;
+    }
+    .contato{
+        margin-right: 2.5vw;
     }
 }
